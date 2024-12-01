@@ -1,0 +1,67 @@
+import React from 'react';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <div className="card">
+        <h2 className="card-title">Título do Card</h2>
+        <p className="card-description">Esta é uma descrição para o card. Adicione mais detalhes aqui!</p>
+        <button className="card-button">Saiba Mais</button>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #555;
+}
+
+.card-button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
